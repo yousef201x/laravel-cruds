@@ -17,13 +17,13 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        User::factory(10)->create();
+        User::factory(100)->create();
 
         $this->call([
             UserSeeder::class,
         ]);
 
-        Task::factory(10)->create();
+        Task::factory(500)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
